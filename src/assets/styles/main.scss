@@ -1,0 +1,60 @@
+@use '../fonts/font.scss';
+
+:root {
+  --white: #fff;
+  --black: #13161d;
+  --header: #1a1d26;
+  --section: #20222e;
+  --input: #303342;
+  --orange: #fc7243;
+  --blue: #4b69ff;
+  --red: #e54140;
+  --green: #5ccf36;
+  --pink: #d32de5;
+  --purple: #8846ff;
+  --muted: #313745;
+  --trans: all 0.2s ease-in-out;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gilroy';
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--white);
+  background: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+
+  &:hover {
+    color: var(--orange);
+  }
+}
+
+// generals
+.linear {
+  background: rgb(73, 103, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(73, 103, 251, 1) 0%,
+    rgba(32, 78, 255, 1) 100%
+  );
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}

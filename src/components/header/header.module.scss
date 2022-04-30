@@ -1,0 +1,22 @@
+.nav {
+  ul {
+    list-style: none;
+    display: flex;
+    align-content: center;
+
+    .nav_link {
+      padding: 15px 0;
+      display: inline-block;
+      margin: 0 15px;
+      color: var(--muted);
+      transition: var(--trans);
+      border-top: 3px solid transparent;
+      text-transform: uppercase;
+
+      &:hover {
+        color: var(--white);
+        border-top-color: var(--orange);
+      }
+    }
+  }
+}
